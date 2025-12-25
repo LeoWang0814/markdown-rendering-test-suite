@@ -7,9 +7,27 @@ for validating **Markdown parsers, renderers, and static site pipelines**.
 
 ---
 
+## 🌍 Language Versions Available
+
+This repository provides **both Chinese and English versions** of the Markdown test file  
+to support **internationalization (i18n) testing** and cross-language rendering comparison.
+
+本仓库同时提供 **中文版与英文版 Markdown 测试文件**，  
+适用于 **多语言渲染测试 / 国际化支持验证**。
+
+| Language | File |
+|--------|------|
+| 中文版 (Chinese) | `markdown-test-zh.md` |
+| English | `markdown-test-en.md` |
+
+Both files are **functionally identical** and differ only in text language.  
+两个文件在 **结构与测试覆盖范围上完全一致，仅文本语言不同**。
+
+---
+
 ## ✨ What is this?
 
-This repository provides a **single, high-coverage Markdown file**  
+This repository provides a **high-coverage Markdown test file**  
 that exercises most commonly used Markdown features, including:
 
 - Basic and advanced syntax
@@ -19,7 +37,7 @@ that exercises most commonly used Markdown features, including:
 - External image loading
 - HTML + Markdown mixed rendering
 
-If your system renders this correctly,  
+If your system renders these files correctly,  
 your Markdown support is already **production-ready**.
 
 本仓库提供了一个**覆盖率极高的 Markdown 示例文件**，用于系统性测试：
@@ -31,7 +49,7 @@ your Markdown support is already **production-ready**.
 - 外部图床图片加载
 - HTML 与 Markdown 混合渲染
 
-**如果你的页面能正确显示这个文件，  
+**如果你的页面能正确显示这些测试文件，  
 你的 Markdown 支持已经非常可靠。**
 
 ---
@@ -40,15 +58,16 @@ your Markdown support is already **production-ready**.
 
 ```text
 .
-├── markdown-test.md     # Main Markdown test file
-└── README.md            # Project documentation
+├── markdown-test-zh.md   # 中文版 Markdown 测试文件
+├── markdown-test-en.md   # English Markdown test file
+└── README.md             # Project documentation
 ````
 
 ---
 
 ## 🧪 What does it test?
 
-The test file includes:
+Each test file includes:
 
 * Headings (H1–H6)
 * Text emphasis (bold / italic / strikethrough)
@@ -84,6 +103,7 @@ This repository is useful if you are:
   * `markdown-it`
   * `remark`
   * `showdown`
+* Validating **multi-language Markdown rendering consistency**
 
 ---
 
@@ -95,30 +115,35 @@ This repository is useful if you are:
    git clone https://github.com/LeoWang0814/markdown-rendering-test-suite.git
    ```
 
-2. Open `markdown-test.md` in your system
+2. Open either test file:
 
-3. Check whether all elements render as expected
+   * `markdown-test-zh.md` for Chinese
+   * `markdown-test-en.md` for English
 
-4. Fix inconsistencies or unsupported features if needed
+3. Render the file in your system
+
+4. Verify that all elements display as expected
+
+5. Fix unsupported or inconsistent behaviors if needed
 
 ---
 
 ## 📸 External Image Test
 
-The test file includes an externally hosted image to verify:
+Both test files include an externally hosted image to verify:
 
-* HTTPS loading
+* HTTPS image loading
 * CORS behavior
-* Image rendering inside Markdown
+* Image rendering inside Markdown content
 
-This helps catch real-world deployment issues early.
+This helps identify real-world deployment issues early.
 
 ---
 
 ## 📄 License
 
 MIT License.
-Feel free to use, modify, and include this in your own projects.
+Feel free to use, modify, and include this repository in your own projects.
 
 ---
 
@@ -126,10 +151,8 @@ Feel free to use, modify, and include this in your own projects.
 
 Markdown looks simple — until it breaks.
 
-This repository exists to help you **find those breaks early**,
-before your users do.
-
----
+This repository exists to help you **find rendering issues early**,
+before they reach production or your users.
 
 If you find this useful, consider starring the repository ⭐
 or using it as a baseline for your own Markdown tests.
