@@ -118,7 +118,7 @@ greet("World");
 
 下面是一张从外部图床加载的图片，用于测试图片解析与 HTTPS 资源加载：
 
-![Markdown Image Test](https://youke2.picui.cn/s1/2025/12/22/694936dca528e.jpg)
+![Markdown Image Test](https://www.helloimg.com/i/2025/12/28/695137b020f5b.jpg)
 
 ---
 
@@ -162,3 +162,4 @@ _ 下划线
 
 如果你能 **正确看到标题层级、代码高亮、表格对齐、图片显示、任务列表和 HTML 区块**，
 那么你这套 Markdown 解析 **已经非常合格了** ✅
+
