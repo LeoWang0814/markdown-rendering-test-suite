@@ -118,7 +118,7 @@ Alignment test:
 The image below is hosted on an external image service
 to test HTTPS loading and Markdown image rendering:
 
-![Markdown Image Test](https://youke2.picui.cn/s1/2025/12/22/694936dca528e.jpg)
+![Markdown Image Test](https://www.helloimg.com/i/2025/12/28/695137b020f5b.jpg)
 
 ---
 
